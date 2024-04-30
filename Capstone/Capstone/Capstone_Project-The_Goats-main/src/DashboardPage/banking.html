@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <!-- <link href="images/plogo.PNG" rel="icon">
+    <link href="images/plogob.jpg" rel="apple-touch-icon"> -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=KoHo:wght@300;400&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div class="navigationBar">
+    <div class="profileIcon navIconANDtxt">
+        <img class="navIcons" src="images/profileIcon.png" alt="">
+        <p>Profile</p>
+    </div>
+    <div class="middleIcons">
+        <div class="navIconANDtxt">
+            <img class="navIcons" src="images/dashboardIcon.png" alt="">
+            <a class="navLinks" href="index.html">
+                <p>Dashboard</p>
+            </a>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/bankingIcon.png" alt="">
+            <a class="navLinks" href="banking.html">
+                <p>Banking</p>
+            </a>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/budgetIcon.png" alt="">
+            <p>Budgeting</p>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/stockIcon.png" alt="">
+            <p>Stocks</p>
+        </div>
+    </div>
+    <div class="settingsIcon navIconANDtxt">
+        <img class="navIcons" src="images/settingsIcon.png" alt="">
+        <a class="navLinks" href="xtra.html">
+            <p>Settings</p>
+        </a>
+    </div>
+</div>
+
+<div class="bodySection">
+
+    <div class="selectionBar">
+        <div class="bankingOptions accCont">
+            <h5 style="margin: 0; font-weight: 800;">ACCOUNTS</h6>
+            <div class="dropdownInvisCont">
+                <div class="accountsDropdown">
+                    <p class="button checkingAccBtn" >Checkings (...5547)</p>
+                    <p class="button savingsAccBtn" >Savings (...3975)</p>
+                </div>
+            </div>
+        </div>
+        <div class="bankingOptions">
+            <h5 style="margin: 0; font-weight: 800;">CARDS</h6>
+                <div class="dropdownInvisCont">
+                    <div class="cardsDropdown">
+                        <div class="button savingsCardBtn card1">
+                            <span class="cardName">SAVINGS PLUS</span>
+                            <span class="cardNum">XXXX-3845</span>
+                        </div>
+                        <div class="button blackCardBtn card2">
+                            <span class="cardName">BLACK PLATINUM</span>
+                            <span class="cardNum">XXXX-9348</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="button transferBtn  bankingOptions">TRANSFER</div>
+        <button class="button ficoBtn  bankingOptions" type="submit">FICO SCORE</button>
+    </div>
+
+<!-- repeat for each button -->
+    <div class="repeatDisplays display checkingsDiv" id="checkingsDiv">
+        <div class="repeatDisplays22">
+            <div class="mainDisplay">
+                <div class="transactionTxt">
+                    <span style="margin: 22px 0px 0px 32px;">Transactions</span>
+                </div>
+                <div class="bankingScrollable">
+                    <div id="transactions" class="transactionsRowsx"></div>
+                </div>
+            </div>
+            <div class="rightInfoBarss">
+                <div class="infoTopCont">
+                    <p class="checkAccTxt">
+                        Checkings Account
+                    </p>
+                    <p class="accInfo">
+                        Account Number: <span  class="boldBalances" id="account-number"></span><br>
+                        Routing Number: <span  class="boldBalances" id="routing-number"></span><br>
+                        Interest Rate : <span  class="boldBalances" id="interestRate"></span>%
+                    </p>
+                </div>
+                <div class="infoBottomCont">
+                    <p class="acntBalTxt">
+                        Account Balance
+                    </p>
+                    <p class="balanceAmount">
+                        $ <span id="ChkAccbalance">--</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="transferFunds">
+            <h2>Transfer Funds</h2>
+            <div class="transferInputs">
+                <p>Transfer To</p>
+                <select id="transferTo">
+                    <option value="SavingsAcc">Savings Account</option>
+                </select>
+                
+                <input type="number" id="ChkAccamount" placeholder="Amount">
+                
+                <button id="chkAcctransferButton">Transfer</button>
+            </div>
+        </div>
+        <div class="saveOnGasCont">
+            <img src="images/RestaurantAd.PNG" alt="">
+            <img src="images/AppletvAd.PNG" alt="">
+            <img src="images/ShellAd.PNG" alt="">
+            <img src="images/WalmartAd.PNG" alt="">
+            <img src="images/groceryAd.PNG" alt="">
+        </div>
+        <div class="bankFooter">
+            <p>
+                Disclosures - THIS Bank, N.A., and its affiliates offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through THIS Bank LLC, a member of FINRA and SIPC. Insurance products are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. THIS Bank and CIA are affiliated companies under the common control of THIS Bank & Co. Products not available in all states.
+                Please note that the privacy policy and security practices of the linked website may differ from those of THIS Bank, N.A., and its affiliates. It is recommended that customers review the privacy statements and security policies of any third-party websites accessed through this site. THIS Bank, N.A., does not guarantee or endorse the information, recommendations, products, or services offered on third-party sites.
+                Investments in securities: Not FDIC Insured • No Bank Guarantee • May Lose Value. Investing in securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and THIS Bank's charges and expenses. The investment products sold through THIS Bank and its affiliates are not insured by the FDIC, are not deposits or other obligations of, or guaranteed by, THIS Bank, and are subject to investment risks, including possible loss of the principal amount invested.
+                All loan applications are subject to credit review and approval. Interest rates and terms may vary, and the approval of your loan is based on specific criteria, including your credit history, income, and other factors.
+                THIS Bank is committed to adhering to a strict code of ethics and upholding the highest standards of trust and integrity. Potential conflicts of interest are identified and managed in accordance with our conflict of interest policies and procedures to ensure our clients' interests are protected at all times.
+                For additional information, including details about our products, services, and fees, please contact a THIS Bank representative. By using THIS Bank's services, you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
+            </p>
+        </div>
+    
+    </div>
+<!-- repeat for each button -->
+
+
+<!-- repeat for each button -->
+    <div class="repeatDisplays display savingsDiv" id="savingsDiv">
+        <div class="repeatDisplays22">
+        <div class="mainDisplay">
+            <div class="transactionTxt">
+                <span style="margin: 22px 0px 0px 32px;">Transactions</span>
+            </div>
+            <div class="bankingScrollable">
+                <div id="Savingstransactions" class="transactionsRowsx"></div>
+            </div>
+        </div>
+        <div class="rightInfoBarss">
+            <div class="infoTopCont">
+                <p class="checkAccTxt">
+                    Savings Account
+                </p>
+                <p class="accInfo">
+                    Account Number: <span class="boldBalances" id="saccount-number"></span><br>
+                    Routing Number: <span class="boldBalances" id="srouting-number"></span><br>
+                    Interest Rate : <span class="boldBalances" id="sinterestRate"></span>%
+                </p>
+            </div>
+            <div class="infoBottomCont">
+                <p class="acntBalTxt">
+                    Account Balance
+                </p>
+                <p class="balanceAmount">
+                    $ <span  id="SvnAccbalance"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="transferFunds">
+        <h2>Transfer Funds</h2>
+        <div class="transferInputs">
+            <p>Transfer To</p>
+            <select id="transferTo">
+                <option value="SavingsAcc">Checkings Account</option>
+            </select>
+            
+            <input type="number" id="SavAccamount" placeholder="Amount">
+            
+            <button id="SavAcctransferButton">Transfer</button>
+        </div>
+    </div>
+    <div class="saveOnGasCont">
+        <img src="images/AppletvAd.PNG" alt="">
+        <img src="images/ShellAd.PNG" alt="">
+        <img src="images/groceryAd.PNG" alt="">
+        <img src="images/WalmartAd.PNG" alt="">
+        <img src="images/RestaurantAd.PNG" alt="">
+    </div>
+    <div class="bankFooter">
+        <p>
+            Disclosures - THIS Bank, N.A., and its affiliates offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through THIS Bank LLC, a member of FINRA and SIPC. Insurance products are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. THIS Bank and CIA are affiliated companies under the common control of THIS Bank & Co. Products not available in all states.
+            Please note that the privacy policy and security practices of the linked website may differ from those of THIS Bank, N.A., and its affiliates. It is recommended that customers review the privacy statements and security policies of any third-party websites accessed through this site. THIS Bank, N.A., does not guarantee or endorse the information, recommendations, products, or services offered on third-party sites.
+            Investments in securities: Not FDIC Insured • No Bank Guarantee • May Lose Value. Investing in securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and THIS Bank's charges and expenses. The investment products sold through THIS Bank and its affiliates are not insured by the FDIC, are not deposits or other obligations of, or guaranteed by, THIS Bank, and are subject to investment risks, including possible loss of the principal amount invested.
+            All loan applications are subject to credit review and approval. Interest rates and terms may vary, and the approval of your loan is based on specific criteria, including your credit history, income, and other factors.
+            THIS Bank is committed to adhering to a strict code of ethics and upholding the highest standards of trust and integrity. Potential conflicts of interest are identified and managed in accordance with our conflict of interest policies and procedures to ensure our clients' interests are protected at all times.
+            For additional information, including details about our products, services, and fees, please contact a THIS Bank representative. By using THIS Bank's services, you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
+        </p>
+    </div>
+    </div>
+<!-- repeat for each button -->
+<!-- repeat for each button -->
+    <div class="repeatDisplays display savingsCardDiv" id="savingsCardDiv">
+        <div class="repeatDisplays22">
+            <div class="mainDisplay">
+                <div class="transactionTxt">
+                    <span style="margin: 22px 0px 0px 32px;">Transactions</span>
+                </div>
+                <div class="bankingScrollable">
+                    <div id="SavingsCardtransactions" class="transactionsRowsx"></div>
+                </div>
+            </div>
+            <div class="rightInfoBarss">
+                <div class="infoTopCont">
+                    <p class="checkAccTxt">
+                        Savings Plus Card
+                    </p>
+                    <p class="accInfo">
+                        Account Number : <span  class="boldBalances"  id="scaccount-number"></span><br>
+                        Card Number    : <span class="boldBalances"  id="sccard-number"></span><br>
+                        APR            : <span   class="boldBalances"  style="font-weight: 500;" id="scapr"></span>%<br>
+                        Current Balance: $<span  class="boldBalances"  id="sccurrentBalance"></span><br>
+                        Credit Line    : $<span class="boldBalances"   id="sccreditLine"></span>
+                    </p>
+                </div>
+                <div class="infoBottomCont">
+                    <div class="savingsCardBtn card1 cardInside">
+                        <span class="cardName">SAVINGS PLUS</span>
+                        <span class="cardNum">XXXX-3845</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="saveOnGasCont">
+            <img src="images/AppletvAd.PNG" alt="">
+            <img src="images/ShellAd.PNG" alt="">
+            <img src="images/groceryAd.PNG" alt="">
+            <img src="images/WalmartAd.PNG" alt="">
+            <img src="images/RestaurantAd.PNG" alt="">
+        </div>
+        <div class="bankFooter">
+            <p>
+                Disclosures - THIS Bank, N.A., and its affiliates offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through THIS Bank LLC, a member of FINRA and SIPC. Insurance products are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. THIS Bank and CIA are affiliated companies under the common control of THIS Bank & Co. Products not available in all states.
+                Please note that the privacy policy and security practices of the linked website may differ from those of THIS Bank, N.A., and its affiliates. It is recommended that customers review the privacy statements and security policies of any third-party websites accessed through this site. THIS Bank, N.A., does not guarantee or endorse the information, recommendations, products, or services offered on third-party sites.
+                Investments in securities: Not FDIC Insured • No Bank Guarantee • May Lose Value. Investing in securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and THIS Bank's charges and expenses. The investment products sold through THIS Bank and its affiliates are not insured by the FDIC, are not deposits or other obligations of, or guaranteed by, THIS Bank, and are subject to investment risks, including possible loss of the principal amount invested.
+                All loan applications are subject to credit review and approval. Interest rates and terms may vary, and the approval of your loan is based on specific criteria, including your credit history, income, and other factors.
+                THIS Bank is committed to adhering to a strict code of ethics and upholding the highest standards of trust and integrity. Potential conflicts of interest are identified and managed in accordance with our conflict of interest policies and procedures to ensure our clients' interests are protected at all times.
+                For additional information, including details about our products, services, and fees, please contact a THIS Bank representative. By using THIS Bank's services, you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
+            </p>
+        </div>
+    </div>
+<!-- repeat for each button -->
+<!-- repeat for each button -->
+    <div class="repeatDisplays display blackCaedDiv" id="blackCaedDiv">
+        <div class="repeatDisplays22">
+        <div class="mainDisplay">
+            <div class="transactionTxt">
+                <span style="margin: 22px 0px 0px 32px;">Transactions</span>
+            </div>
+            <div class="bankingScrollable">
+                <div id="BlackCardtransactions" class="transactionsRowsx"></div>
+            </div>
+        </div>
+        <div class="rightInfoBarss">
+            <div class="infoTopCont">
+                <p class="checkAccTxt">
+                    Black Platinum Card
+                </p>
+                <p class="accInfo">
+                    Account Number : <span  class="boldBalances"  id="bcaccount-number"></span><br>
+                    Card Number    : <span class="boldBalances"  id="bccard-number"></span><br>
+                    APR            : <span   class="boldBalances"  id="bcapr"></span>%<br>
+                    Current Balance: $<span  class="boldBalances"  id="bccurrentBalance"></span><br>
+                    Credit Line    : $<span class="boldBalances"   id="bccreditLine"></span>
+                </p>
+            </div>
+            <div class="infoBottomCont">
+                <div class="blackCardBtn card2 cardInside">
+                    <span class="cardName">BLACK PLATINUM</span>
+                    <span class="cardNum">XXXX-9348</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="saveOnGasCont">
+            <img src="images/AppletvAd.PNG" alt="">
+            <img src="images/ShellAd.PNG" alt="">
+            <img src="images/groceryAd.PNG" alt="">
+            <img src="images/WalmartAd.PNG" alt="">
+            <img src="images/RestaurantAd.PNG" alt="">
+        </div>
+        <div class="bankFooter">
+            <p>
+                Disclosures - THIS Bank, N.A., and its affiliates offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through THIS Bank LLC, a member of FINRA and SIPC. Insurance products are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. THIS Bank and CIA are affiliated companies under the common control of THIS Bank & Co. Products not available in all states.
+                Please note that the privacy policy and security practices of the linked website may differ from those of THIS Bank, N.A., and its affiliates. It is recommended that customers review the privacy statements and security policies of any third-party websites accessed through this site. THIS Bank, N.A., does not guarantee or endorse the information, recommendations, products, or services offered on third-party sites.
+                Investments in securities: Not FDIC Insured • No Bank Guarantee • May Lose Value. Investing in securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and THIS Bank's charges and expenses. The investment products sold through THIS Bank and its affiliates are not insured by the FDIC, are not deposits or other obligations of, or guaranteed by, THIS Bank, and are subject to investment risks, including possible loss of the principal amount invested.
+                All loan applications are subject to credit review and approval. Interest rates and terms may vary, and the approval of your loan is based on specific criteria, including your credit history, income, and other factors.
+                THIS Bank is committed to adhering to a strict code of ethics and upholding the highest standards of trust and integrity. Potential conflicts of interest are identified and managed in accordance with our conflict of interest policies and procedures to ensure our clients' interests are protected at all times.
+                For additional information, including details about our products, services, and fees, please contact a THIS Bank representative. By using THIS Bank's services, you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
+            </p>
+        </div>
+    </div>
+<!-- repeat for each button -->
+<!-- repeat for each button -->
+    <div class="repeatDisplays display transferDiv" id="transferDiv">
+        <div class="repeatDisplays22">
+        <div class="mainDisplay">
+            <div class="transactionTxt">
+                <span style="margin: 22px 0px 0px 32px;">Recent Transfers</span>
+            </div>
+            <div class="bankingScrollable">
+                <div id="transferMoney" class="transactionsRowsx"></div>
+            </div>
+        </div>
+        <div class="rightInfoBarss">
+            <div class="infoTopCont">
+                <p class="checkAccTxt">
+                    Checkings Account
+                </p>
+                <p class="accInfo">
+                    Account Number: <span  class="boldBalances" id="account-number"></span><br>
+                    Routing Number: <span  class="boldBalances" id="routing-number"></span><br>
+                    Interest Rate : <span  class="boldBalances" id="interestRate"></span>%
+                </p>
+            </div>
+            <div class="infoBottomCont">
+                <p class="acntBalTxt">
+                    Account Balance
+                </p>
+                <p class="balanceAmount">
+                    $ <span  id="balance"></span>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- repeat for each button -->
+<!-- repeat for each button -->
+    <div class="repeatDisplays display ficoDiv" id="ficoDiv">
+        <div class="mainDisplay">
+            <!-- <div id="transactions" class="transactionsRowsx"></div> -->
+        </div>
+        <div class="rightInfoBarss">
+            <div class="infoTopCont">
+    
+            </div>
+            <div class="infoBottomCont">
+    
+            </div>
+        </div>
+    </div>
+<!-- repeat for each button -->
+    
+</div>
+
+
+
+
+
+
+
+      <!-- <script src="script.js" type="module" ></script> -->
+      <script type="module" src="Rscript.js"></script>
+
+</body>

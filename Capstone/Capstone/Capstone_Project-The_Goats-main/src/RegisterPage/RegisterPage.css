@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+body {
+    background-color: #f2f2f2; /* Light grey background color */
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.content-container {
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 250px;
+    background-color: #d9d9d9; /* Slightly darker grey box color */
+    border-radius: 20px; /* Optional: Add rounded corners */
+    width: 80%; /* Set the width as a percentage of the viewport width */
+    max-width: 425px; /* Set a maximum width for the container */
+}
+
+.password-requirements {
+    margin-top: 15px;
+    text-align: center; /* Center align the text */
+}
+
+.password-requirements h3 {
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.password-requirements ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: left; /* Align the list items to the left */
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 200px;
+}
+
+.password-requirements ul li {
+    margin-bottom: 5px; /* Add some bottom margin for spacing between list items */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+h1 {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 0; /* Remove default margin from the top */
+}
+
+input {
+    padding: 25px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px;
+    background-color: #d910bb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8610e6;
+}
+
+.error-box {
+    padding: 0.9rem 1.75rem;
+    background-color: rgb(217, 16, 187); /* Background color for the error box */
+    border-radius: 5rem; /* Make the error box container round */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+    width: 80%; /* Set the width to match the content-container */
+    max-width: 600px; /* Set a maximum width for the error box */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+.error-message {
+    color: white; /* Set the color of the error message */
+    text-align: center; /* Center the text horizontally */
+    font-size: 1rem;
+    font-weight: 600;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone</title>
+    <!-- <link href="images/plogo.PNG" rel="icon">
+    <link href="images/plogob.jpg" rel="apple-touch-icon"> -->
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=KoHo:wght@300;400&family=Koulen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+<div class="navigationBar">
+    <div class="profileIcon navIconANDtxt">
+        <img class="navIcons" src="images/profileIcon.png" alt="">
+        <p>Profile</p>
+    </div>
+    <div class="middleIcons">
+        <div class="navIconANDtxt">
+            <img class="navIcons" src="images/dashboardIcon.png" alt="">
+            <a class="navLinks" href="index.html">
+                <p>Dashboard</p>
+            </a>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/bankingIcon.png" alt="">
+            <a class="navLinks" href="banking.html">
+                <p>Banking</p>
+            </a>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/budgetIcon.png" alt="">
+            <p>Budgeting</p>
+        </div>
+        <div class="navIconANDtxt" >
+            <img class="navIcons" src="images/stockIcon.png" alt="">
+            <p>Stocks</p>
+        </div>
+    </div>
+    <div class="settingsIcon navIconANDtxt">
+        <img class="navIcons" src="images/settingsIcon.png" alt="">
+        <a class="navLinks" href="xtra.html">
+            <p>Settings</p>
+        </a>
+    </div>
+</div>
+
+<div class="dashBodySection">
+    <div class="dashNumbersCont">
+        <div class="currentBalChk DashChildsOnd">
+            <p>Checkings (..4483) Balance</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="ChkAccbalance">--</span></p>
+        </div>
+        <div class="currentBalSav DashChildsOnd">
+            <p>Savings (...9958) Balance</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="SvnAccbalance">--</span></p>
+        </div>
+        <div class="currentBalCardSav DashChildsOnd">
+            <p>Savings Plus CC balance</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="SavCCbalance">--</span></p>
+        </div>
+        <div class="currentBalCardBlk DashChildsOnd">
+            <p>Black Platinum CC balance</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="BlkCCbalance">--</span></p>
+        </div>
+        <div class="TotalDepo DashChildsOnd">
+            <p>Total Deposit (April)</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="totalDepositsThisMonth">--</span></p>
+        </div>
+        <div class="totalSpent DashChildsOnd">
+            <p>Total Spent (April)</p>
+            <p class="balances"><span style="font-size: 80px;">$</span><span id="totalSpentThisMonth">--</span></p>
+        </div>
+    </div>
+
+    <div class="dashRecentTrans">
+        <p class="rtTxt">Recent Transactions</p>
+        <div class="mainDisplay2">
+            <div class="bankingScrollable2">
+                <div id="recentTransactions" class="transactionsRowsx2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ficoCont">
+        <div class="ficoScoreCont">
+            <p>FICO SCORE<br><span id="scoreDisplay">--</span></p>
+
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="ficoScoreProgressBar"></div>
+        </div>
+        <div class="ficoChart">
+            <div id="charts">
+                <canvas id="chart1"></canvas>
+              </div>
+        </div>
+    </div>
+
+
+
+    <div class="bankFooter">
+        <p>
+            Disclosures - THIS Bank, N.A., and its affiliates offer investment products, which may include bank-managed accounts and custody, as part of its trust and fiduciary services. Other investment products and services, such as brokerage and advisory accounts, are offered through THIS Bank LLC, a member of FINRA and SIPC. Insurance products are made available through Chase Insurance Agency, Inc. (CIA), a licensed insurance agency, doing business as Chase Insurance Agency Services, Inc. in Florida. THIS Bank and CIA are affiliated companies under the common control of THIS Bank & Co. Products not available in all states.
+            Please note that the privacy policy and security practices of the linked website may differ from those of THIS Bank, N.A., and its affiliates. It is recommended that customers review the privacy statements and security policies of any third-party websites accessed through this site. THIS Bank, N.A., does not guarantee or endorse the information, recommendations, products, or services offered on third-party sites.
+            Investments in securities: Not FDIC Insured • No Bank Guarantee • May Lose Value. Investing in securities involves risks, and there is always the potential of losing money when you invest in securities. Before investing, consider your investment objectives and THIS Bank's charges and expenses. The investment products sold through THIS Bank and its affiliates are not insured by the FDIC, are not deposits or other obligations of, or guaranteed by, THIS Bank, and are subject to investment risks, including possible loss of the principal amount invested.
+            All loan applications are subject to credit review and approval. Interest rates and terms may vary, and the approval of your loan is based on specific criteria, including your credit history, income, and other factors.
+            THIS Bank is committed to adhering to a strict code of ethics and upholding the highest standards of trust and integrity. Potential conflicts of interest are identified and managed in accordance with our conflict of interest policies and procedures to ensure our clients' interests are protected at all times.
+            For additional information, including details about our products, services, and fees, please contact a THIS Bank representative. By using THIS Bank's services, you agree to our Terms of Use and acknowledge you have read our Privacy Policy.
+        </p>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+      <!-- <script src="script.js" type="module" ></script> -->
+      <script type="module" src="dashboardScript.js"></script>
+
+</body>

@@ -1,0 +1,49 @@
+/* NavBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+.navbar {
+  overflow: hidden;
+  min-height: 20px;
+  margin-right: 3rem;
+  margin-top: 20px; /* Adjust the margin-top value to lower the navbar */
+}
+
+.logo {
+  height: 80px; /* Set the height of the logo as needed */
+  margin-right: 100px; /* Adjust margin for spacing */
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  text-align: right;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: rgb(217, 16, 187);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.primary-button:hover {
+  background-color: #8610e6;
+}
+
+.navbar a:hover {
+  transform: translateY(5px); 
+}

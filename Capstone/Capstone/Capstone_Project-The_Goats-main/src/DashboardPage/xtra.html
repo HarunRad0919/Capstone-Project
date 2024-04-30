@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Back Door</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Lexend+Deca:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=KoHo:wght@300;400&family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700&family=Outfit:wght@400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+</head>
+<body  class="BackDoorBody">
+  <a href="index.html">
+    <div class="backBtn">
+      HOME
+    </div>
+  </a>
+  <h1 style="font-family: 'bebas neue';">BackDoor</h1>
+
+  <form id="transactionForm">
+    <select id="transactionType">
+        <option value="CheckingsAcc_spent">Checkings Acc (spent)</option>
+        <option value="SavingsAcc_spent">Savings Acc (spent)</option>
+        <option value="CheckingsAcc_deposit">Checkings Acc (deposit)</option>
+        <option value="SavingsAcc_deposit">Savings Acc (deposit)</option>
+        <option value="SavingsCC_spent">SavingsCC (spent)</option>
+        <option value="BlackCC_spent">BlackCC (spent)</option>
+        <option value="SendFund_spent">SendFund (spent)</option>
+        <option value="ReceivedFund_deposit">ReceivedFund (deposit)</option>
+    </select>
+    <input type="text" id="transactionName" placeholder="Name">
+    <input type="number" id="transactionAmount" placeholder="Amount">
+    <input type="date" id="transactionDate" value="">
+    <button type="button" id="submitTransactionButton">Submit</button>
+  </form>
+
+
+
+
+
+ 
+  <button type="button" id="addDataButton">Add Bulk Data</button>
+
+
+  <div id="randomDataForm" style="display: none;">
+      <select id="duration">
+          <option value="1">1 month</option>
+          <option value="2">2 months</option>
+          <option value="2">4 months</option>
+          <option value="2">6 months</option>
+          <option value="2">8 months</option>
+          <option value="2">10 months</option>
+          <option value="12">12 months</option>
+      </select>
+      <select id="transactionsPerMonth">
+          <option value="2">2 transactions/month</option>
+          <option value="5">5 transactions/month</option>
+          <option value="10">10 transactions/month</option>
+          <option value="15">15 transactions/month</option>
+          <option value="20">20 transactions/month</option>
+      </select>
+      <select id="randomTransactionType">
+        <option value="CheckingsAcc" data-type="spent">Checkings Acc (spent)</option>
+        <option value="SavingsAcc" data-type="spent">Savings Acc (spent)</option>
+        <option value="CheckingsAcc" data-type="deposit">Checkings Acc (deposit)</option>
+        <option value="SavingsAcc" data-type="deposit">Savings Acc (deposit)</option>
+        <option value="SavingsCC" data-type="spent">SavingsCC (spent)</option>
+        <option value="BlackCC" data-type="spent">BlackCC (spent)</option>
+        <option value="SendFund" data-type="spent">SendFund (spent)</option>
+        <option value="ReceivedFund" data-type="deposit">ReceivedFund (deposit)</option>
+      </select>
+    
+      <button type="button" id="submitRandomDataButton">GENERATE</button>
+  </div>
+
+ 
+
+
+  <script type="module" src="BackDoorscript.js"></script>
+</body>
+</html>
