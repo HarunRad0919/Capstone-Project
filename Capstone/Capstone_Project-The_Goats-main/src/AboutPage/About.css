@@ -1,0 +1,67 @@
+/* About.css */
+body {
+    background-color: #f2f2f2; /* Light grey background color */
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+h1 {
+    text-align: center; /* Center align the "About Us" heading */
+    margin-top: 20px; /* Adjust margin-top for the "About Us" heading */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-container {
+    max-width: 600px; /* Limit the width of the text container */
+    margin-right: 20px; /* Add some margin between the text and image */
+    text-align: center; /* Center align the text */
+    font-size: 1.25em;
+}
+
+.image-container {
+    margin-top: 20px; /* Add some margin between the text and image */
+    text-align: center; /* Center align the image */
+}
+
+.about-image {
+    max-width: 400px; /* Set the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.key-points {
+    margin-top: 50px;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.key-points li {
+    margin-bottom: 10px; /* Add some spacing between each line of text */
+}
+
+.contact-info {
+    margin-top: 125px; /* Adjust the margin-top value for spacing */
+    text-align: center; /* Center the text horizontally */
+    font-size: 1.5rem;
+}
+
+.text-container strong {
+    color: #d910bb; /* Set color for the title */
+    font-size: 1.75rem;
+}
+
+.hoverable {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.hoverable:hover {
+    font-weight: bold; /* Change font weight on hover */
+    color: #d910bb; /* Change color on hover */
+}

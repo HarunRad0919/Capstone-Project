@@ -1,0 +1,1638 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: #191919; */
+    background: url("./images/background1.png") center ;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.backBtn
+{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 30px;
+    background-color: #ff713094;
+    top: 10px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: white;
+    font-family: 'bebas neue';
+    scale: 1;
+    box-shadow: 0 0 10px 1px #00000000;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+}
+.backBtn:hover
+{
+    scale: 1.1;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+    box-shadow: 0 0 10px 1px #0000006e;
+}
+
+.navigationBar
+{
+    position: fixed;
+    display: flex;
+    width: 40px;
+    min-width: fit-content;
+    height: 80vh;
+    background-color: black;
+    left: 10px;
+    top: 100px;
+    border-radius: 25px;
+    transition: width 1s ease;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+}
+
+.navIconANDtxt p
+{
+    display: flex;
+    color: white;
+    margin: 0;
+    opacity: 0; 
+    max-width: 0; 
+    overflow: hidden; 
+    transition: opacity 2s ease, max-width 0.6s ease, visibility 2s ease, margin 1s ease; /* Smooth transition */
+    visibility: hidden; /* Initially not visible */
+    font-family: 'inter';
+    font-weight: 600;
+}
+.navLinks p
+{
+    display: flex;
+    color: white;
+    margin: 0;
+    opacity: 0; 
+    max-width: 0; 
+    overflow: hidden; 
+    transition: opacity 2s ease, max-width 0.6s ease, visibility 2s ease, margin 1s ease; /* Smooth transition */
+    visibility: hidden; /* Initially not visible */
+    font-family: 'inter';
+    font-weight: 600;
+}
+.navLinks
+{
+    text-decoration: none;
+}
+
+.navIconANDtxt:hover p
+{
+    color:#00a6ff;
+    cursor: pointer;
+}
+.navLinks:hover
+{
+    color:#00a6ff;
+    cursor: pointer;
+}
+
+.navigationBar:hover
+{
+    width: 200px;
+    /* background: linear-gradient(93deg, #000000 40%, #000000a6); */
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    transition: width 1s ease;
+}
+
+.navigationBar:hover .navIconANDtxt p
+{
+    display: flex; /* Make flex layout */
+    margin: 2px 2px 2px 49px;
+    opacity: 1; /* Fade in */
+    max-width: 200px; /* Enough height to show content */
+    visibility: visible; /* Make visible */
+    transition: opacity 2s ease, max-width 2s ease, visibility 2s ease, margin 1s ease; /* Smooth transition */
+}
+
+.navIcons
+{
+    position: relative;
+    width: auto;
+    height: 26px;
+    margin: 10px;
+}
+
+/* .navIcons:hover
+{
+    padding-bottom: 7px;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: white;
+} */
+
+.navIconANDtxt
+{
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.middleIcons
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.header
+{
+    position: relative;
+    display: flex;
+    width: 95%;
+    align-items: center;
+    width: 99vw;
+    height: 75px;
+    color: black;
+    /* padding-left: 17px; */
+    justify-content: center;
+}
+.headerLogo
+{
+    position: inherit;
+    display: flex;
+    height: 60%;
+    border-radius: 10px;
+}
+.header p
+{
+    margin: 0;
+    font-family: 'inter';
+}
+.pageName
+{
+    font-size: 3.5vh;
+    font-weight: 400;
+}
+.usernamepages
+{
+    position: inherit;
+    margin-right: 30px;
+    font-size: 2vw;
+    padding: 4px 14px;
+    color: white;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.bodySection
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76vw;
+    /* height: 600px; */
+    /* background-color: rgb(187, 0, 255); */
+    margin: 53px 28px 0 130px;
+}
+
+.repeatDisplays
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.repeatDisplays22
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.transferFunds
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 241px;
+    background-color: #ebeeff;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'bebas neue';
+}
+.saveOnGasCont
+{
+    position: relative;
+    display: flex;
+    width: 98%;
+    height: 241px;
+    background-color: #657cff;
+    border-radius: 36px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'bebas neue';
+    overflow-x: auto;
+    align-content: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 0 10px 1px #0000004a;
+}
+.saveOnGasCont::-webkit-scrollbar
+{
+    display: none; 
+}
+.saveOnGasCont img
+{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+    scale: 1;
+    box-shadow: 0 0 10px 1px #00000000;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+}
+.saveOnGasCont img:hover
+{
+    scale: 1.05;
+    box-shadow: 0 0 10px 1px #000000a5;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+}
+
+.bankFooter
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    margin-bottom: 26px;
+    margin-top: 200px;
+}
+
+
+.transferInputs
+{
+    display: flex;
+}
+.transferFunds h2
+{
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.transferInputs
+{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.transferInputs select, .transferInputs input, .transferInputs button
+{
+   border-style: none;
+   border-radius: 20px;
+   text-align: center;
+   padding: 7px 15px;
+}
+.transferInputs button
+{
+    background-color: #000000;
+    color: white;
+}
+
+.transferInputs p
+{
+    font-size: 15px;
+    margin: 0;
+    font-family: 'inter';
+    font-weight: 600;
+}
+
+.selectionBar
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-color: #ffffffc9;
+    box-shadow: 0 0 15px 1px #00000045;
+    border-radius: 30px;
+}
+
+.bankingOptions
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 5px;
+    padding: 4px 9px;
+    border: solid 2px  white;
+    border-radius: 30px;
+    font-family: 'inter';
+    font-weight: 800;
+}
+
+.bankingOptions:hover
+{
+    border-color: black;
+    border-width: 2px;
+}
+
+
+.dropdownInvisCont
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 13vw;
+    background-color: #ff000000;
+    z-index: 1;
+    padding: 10px 10px 0px 10px;
+    top: 0px;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+}
+
+.bankingOptions:hover .dropdownInvisCont
+{
+    visibility: visible;
+    padding: 40px 10px 0px 10px;
+    opacity: 1;
+    transition: visibility 0.5s ease, opacity 0.1s ease, padding 0.5s ease;
+}
+
+.accountsDropdown
+{
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 130px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(210, 210, 210, 0.501);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    justify-content: space-around;
+    border-radius: 14px;
+    transition: backdrop-filter 6s ease;
+}
+
+.bankingOptions:hover .accountsDropdown
+{
+    background-color: rgba(212, 212, 212, 0.501);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    transition: backdrop-filter 6s ease;
+}
+
+.accountsDropdown p
+{
+    position: relative;
+    display: flex;
+    padding: 11px 14px;
+    margin: 0;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.353);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    border-radius: 11px;
+    scale: 1;
+    transition: scale 0.5s ease;
+}
+.accountsDropdown p:hover
+{
+    scale: 1.1;
+    transition: scale 0.5s ease;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px 1px #00000045;
+}
+
+.cardsDropdown
+{
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(210, 210, 210, 0.501);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    justify-content: space-around;
+    border-radius: 14px;
+    transition: backdrop-filter 6s ease;
+}
+
+.cardInside
+{
+    height: 10vw !important;
+}
+.card1
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px 14px;
+    margin: 9px 20px;
+    width: 80%;
+    height: 82px;
+    background-color: rgba(255, 255, 255, 0.747);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    border-radius: 11px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.card2
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 11px 14px;
+    margin: 9px 20px;
+    width: 80%;
+    height: 82px;
+    background-color: rgba(255, 255, 255, 0.747);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    border-radius: 11px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.card1
+{
+    background: linear-gradient(129deg, #000dbc 10%, #a600ff);
+    scale: 1;
+    transition: scale 0.5s ease;
+}
+.card1:hover
+{
+    scale: 1.1;
+    z-index: 1;
+    transition: scale 0.5s ease;
+    box-shadow: 0 0 15px 1px #00000045;
+}
+.card2
+{
+    background: linear-gradient(129deg, #282828 10%, #000000);
+    scale: 1;
+    transition: scale 0.5s ease;
+}
+.card2:hover
+{
+    scale: 1.1;
+    z-index: 1;
+    transition: scale 0.5s ease;
+    box-shadow: 0 0 15px 1px #00000045;
+}
+.cardNum
+{
+    text-align: end;
+    font-size: 12px;
+}
+.cardName
+{
+    font-style: italic;
+}
+
+.mainDisplay
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(129deg, #8c93ff7a 10%, #ffffff);
+    margin: 20px 0 0 0;
+    border-radius: 21px;
+    overflow: hidden;
+}
+
+.sendMoneyBtn
+{
+    position: inherit;
+    display: flex;
+    height: 53px;
+    width: 123px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.sentInputField
+{
+    position: inherit;
+    display: flex;
+    height: 144px;
+    width: 194px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border-radius: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bankingScrollable
+{
+    width: 100%;
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    border-radius: 20px;
+}
+.scrollable-div::-webkit-scrollbar
+{
+    display: none; 
+}
+
+.rightInfoBarss
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(333px, 40%, 40%);
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 20px 0 0 20px;
+    gap: 5px;
+}
+
+.infoTopCont
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    background-color: #bba3ff81;
+    border-radius: 21px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'inter';
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.infoBottomCont
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40%;
+    border-radius: 21px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #dfaeff6e;
+    font-family: 'inter';
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10)px;
+}
+
+.acntBalTxt, .checkAccTxt
+{
+    font-weight: 600;
+    color: white;
+}
+.accInfo
+{
+    font-size: clamp(10px, 1vw, 17px);
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+.balanceAmount
+{
+    font-size: clamp(0px, 3vw, 50px);
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.boldBalances
+{
+    font-weight: 500;
+}
+
+
+.transactionTxt
+{
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    /* background-color: #a600ff; */
+    font-family: 'inter';
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+
+.transactionsRows
+{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 100px;
+    /* background-color: #000dbc32; */
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #ffffff99;
+}
+
+.transactionsRowsx
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.transName
+{
+    font-family: 'inter';
+    font-weight: 600;
+    font-size: 30px;
+}
+.transDate
+{
+    font-family:  'inter';
+    font-weight: 400;
+    font-size: 12px;
+}
+.transAmount
+{
+    font-family:  'inter';
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* helper functions */
+.display
+{
+    display: none;
+}
+
+.display.visible
+{
+    display: flex;
+}
+.button
+{
+    cursor: pointer;
+}
+.template {
+    display: none;
+  }
+  
+
+
+.transaction-entry
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* |||||||||||||||||||||||||||||||||||||||||||DASHSBOARD SARTS|||||||||||||||||||||||||||||||||||||||| */
+
+
+.dashBodySection
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 71vw;
+    /* height: 100vh; */
+    /* background-color: rgb(255, 0, 0); */
+    margin-top: 33px;
+    /* border-radius: 46px; */
+    gap: 60px;
+   
+}
+
+.dashNumbersCont
+{
+    position: relative;
+    display: flex;
+    width: 97%;
+    /* height: 200px; */
+    background-color: #000000;
+    border-radius: 30px;
+    padding: 1vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 15px;
+}
+
+.DashChildsOnd
+{
+    position: relative;
+    display: flex;
+    width: 32%;
+    height: 170px;
+    background-color: #00a6ff;
+    margin: 8px 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    scale: 1;
+    box-shadow: 0 0 10px 1px #00000000;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+}
+
+.DashChildsOnd:hover
+{
+    scale: 1.05;
+    box-shadow: 0 0 10px 1px #000000a5;
+    transition: scale 0.5s ease, box-shadow 1s ease;
+}
+.currentBalChk
+{
+    background: linear-gradient(132deg, rgba(253, 158, 255, 1), rgba(235, 255, 0, 1));
+}
+.currentBalSav
+{
+    background: linear-gradient(132deg, rgb(255, 255, 255),rgba(196, 255, 28, 1));
+}
+.currentBalCardSav
+{
+    background: linear-gradient(132deg, rgba(191, 109, 255, 1),rgba(0, 255, 87, 1));
+    color: white;
+}
+.currentBalCardBlk
+{
+    background: linear-gradient(132deg,rgba(16, 160, 65, 1),rgb(148, 255, 184));
+    color: white;
+}
+.TotalDepo
+{
+    background: linear-gradient(45deg, rgb(202, 154, 202), rgb(0, 255, 183));
+    color: white;
+}
+.totalSpent
+{
+    background: linear-gradient(132deg, rgb(255, 255, 255),rgba(16, 167, 167, 1));
+}
+
+
+.DashChildsOnd p
+{
+    text-align: center;
+    font-family: 'bebas neue';
+    margin: 0;
+}
+.balances
+{
+    font-size: 100px;
+}
+
+.dashRecentTrans
+{
+    position: relative;
+    display: flex;
+    width: 97%;
+    height: 300px;
+    background-color: #ffffff70;
+    border-radius: 30px;
+    padding: 1vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 15px;
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    font-family: 'bebas neue';
+}
+.rtTxt
+{
+    font-family: 'inter';
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 5px; /* Adjust as needed */
+    text-align: center;
+}
+
+.mainDisplay2
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 225px;
+    /* background: linear-gradient(129deg, #8c93ff7a 10%, #e3b0ff); */
+    margin: 15px 10 10px 0;
+    border-radius: 21px;
+    overflow: hidden;
+}
+.transName2
+{
+    font-family: 'roboto mono';
+    font-weight: 600;
+    font-size: 20px;
+}
+.transDate2
+{
+    font-family: 'roboto mono';
+    font-weight: 400;
+    font-size: 8px;
+}
+.transAmount2
+{
+    font-family: 'roboto mono';
+    font-weight: 700;
+    font-size: 18px;
+}
+.transactionsRowsx2
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+   
+}
+.transactionsRows2
+{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 50px;
+    /* background-color: #000dbc32; */
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: #ffffff99;
+}
+.bankingScrollable2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-radius: 20px;
+}
+
+.BackDoorBody
+{
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(./images/backDoorBackground.jpg);
+    background-position: top;
+    background-size: cover;
+    /* background: no-repeat; */
+    align-items: center;
+    justify-content: center;
+}
+
+#transactionForm
+{
+    padding: 14px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    background-color: black;
+    border-radius: 31px;
+}
+
+#transactionType, #transactionForm input, #transactionForm button
+{
+    padding: 5px 17px;
+    position: relative;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 31px;
+    border-style: none;
+    font-weight: 900;
+}
+#transactionForm button
+{
+    font-family: 'bebas neue';
+    background-color: #d9ff00;
+    font-size: 20px;
+    color: #000000;
+    border-style: solid;
+    border-color: #d9ff00;
+}
+
+#transactionForm button:hover
+{
+    font-family: 'bebas neue';
+    background-color: #e4ff49;
+    font-size: 20px;
+    color: #000000;
+    border-style: solid;
+    border-color: #00fbff;
+}
+
+
+
+#addDataButton
+{
+    border-radius: 20px;
+    border-style: solid;
+    background-color: #3d342700;
+    border-color: #dbff00;
+    color: #dbff00;
+    margin: 20px;
+}
+
+#randomDataForm
+{
+    padding: 14px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+#randomDataForm select,#randomDataForm button
+{
+    padding: 0px 5px;
+    position: relative;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-radius: 35px;
+    border-style: solid;
+    color: white;
+    font-weight: 900;
+    border-width: 13px;
+    border-color: black;
+}
+
+#randomDataForm button
+{
+    font-family: 'bebas neue';
+    background-color: #d9ff00;
+    font-size: 20px;
+    color: #000000;
+    border-style: solid;
+    border-color: #d9ff00;
+}
+
+#randomDataForm button:hover
+{
+    font-family: 'bebas neue';
+    background-color: #e4ff49;
+    font-size: 20px;
+    color: #000000;
+    border-style: solid;
+    border-color: #000000;
+}
+
+
+
+
+
+
+
+.progress-container {
+    display: flex;
+    width: 40px;
+    height: 250px;
+    background: linear-gradient(359deg, rgba(255, 0, 0, 1), rgba(255, 199, 0, 1), rgba(143, 255, 0, 1));
+    position: relative;
+    border-radius: 20px;
+    /* overflow: hidden; */
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.progress-bar {
+    position: relative;
+    bottom: 0;
+    width: 110%;
+    height: 10px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.ficoDiv
+{
+    margin-top: 20px;
+}
+
+.ficoCont
+{
+    position: relative;
+    display: flex;
+    width: 97%;
+    height: 277px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 1vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    font-family: 'bebas neue';
+}
+.ficoScoreCont
+{
+    position: inherit;
+    display: flex;
+    width: 37%;
+    height: 278px;
+    background-color: rgba(166, 166, 166, 0.46);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficoScoreCont p
+{
+    font-size: 25px;
+    text-align: center;
+    color: #3e3e3e6e;
+}
+#scoreDisplay
+{
+    font-size: 150px;
+    color: rgba(255, 99, 32, 1);
+}
+.ficoChart
+{
+    position: inherit;
+    display: flex;
+    width: 49%;
+    height: 278px;
+    background-color: rgb(0 0 0 / 87%);
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#charts
+{
+    width: 387px;
+    height: 230px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ficoXtraCont
+{
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 30px;
+}
+
+.ficoXtra1
+{
+    position: inherit;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 20px 1px #0000004a;
+}
+.fx1
+{
+    background-color: #b6bbff;
+}
+.fx2
+{
+    background-color: #b9fffd;
+}
+.fx3
+{
+    background-color: #ffb4b9;
+}
+.fx4
+{
+    background-color: #dcff9b;
+}
+.fx5
+{
+    background-color: #ebc7ff;
+}
+.fx6
+{
+    background-color: #ffe798;
+}
+
+.ficoXtraTxt
+{
+    position: inherit;
+    margin: 0;
+    font-family: 'bebas neue';
+    margin: 10px;
+}
+.ficoXtraNum
+{
+    position: inherit;
+    margin: 0;
+    font-family: 'bebas neue';
+    font-size: 88px;
+}
+
+.ficoXtraInside
+{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 1px #0000002b;
+}
+
+.ficoTips
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #9faff7; */
+    /* background: linear-gradient(45deg, #d1faff, #a1b2ff); */
+    padding: 20px;
+    border-radius: 25px;
+    color: black;
+    margin-bottom: 120px;
+    font-family: 'Inter';
+    font-size: 15px;
+    /* line-height: 29px; */
+    border-style: solid;
+    border-width: 2px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px 1px #0000004a;
+}
+
+.ftr
+{
+    position: inherit;
+    display: flex;
+    width: 90%;
+    height: 200px;
+    background-color: #000000;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin-left: 75px;
+}
+.ftr img
+{
+    height: 80%;
+}
+
+.ftrLogoCont
+{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 320px;
+}
+
+.ftrLinksCont
+{
+    position: relative;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'inter';
+    font-size: 13px;
+    font-weight: 200;
+}
+.qrCont
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qrCont img
+{
+    position: relative;
+    width: 96%;
+    border-radius: 10px;
+    
+}
+.sentnameTxt
+{
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stocksBody
+{
+    margin-top: -15px;
+    font-family: 'inter';
+    background: rgb(0, 0, 0);
+}
+#searchArea 
+{
+    margin: 20px;
+    display: flex;
+    background-color: #215d57;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 12px 3px black;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#searchArea button
+{
+    position: relative;
+    display: flex;
+    height: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    font-family: 'bebas neue';
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: center;
+}
+#stockInput 
+{
+    padding: 8px;
+    width: 200px;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    background-color: #97d8c3;
+}
+#selectedStocks {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ff0000;
+}
+#stockChart {
+    width: 700px !important;  /* Adjust width as needed */
+    height: 90% !important; /* Adjust height as needed */
+}
+.stocksnavigationBar
+{
+    background-color: #7b91002e !important;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3ff00;
+}
+
+.stkpageName
+{
+    color: rgb(255, 122, 14);
+    font-weight: 700;
+}
+.stocksContent
+{
+    position: relative;
+    display: flex;
+    width: 90%;
+    background-color: #0b0b2800;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+.stocksTop
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #0e0e0e;
+    border-radius: 30px;
+    margin-top: 24px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.searchandname
+{
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#stockButtons
+{
+    margin-top: 2px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#stockButtons button
+{
+    position: relative;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    padding: 3px 9px;
+    border-radius: 20px;
+}
+
+#stockName
+{
+    position: inherit;
+    margin-top: 20px;
+    font-size: 13vw;
+    color: #c3ff00;
+    font-family: 'bebas neue';
+}
+
+#stockNews
+{
+    position: relative;
+    margin-top: 20px;
+    color: white;
+    padding: 30px;
+    /* background-color: aquamarine; */
+    border-radius: 30px;
+    background: linear-gradient(45deg, #041e20, #12152f);
+    font-family: 'inter';
+}
+#stockNews a
+{
+    color: rgb(251, 255, 0);
+}
+#stockNews p
+{
+   font-size: 14px;
+   text-align: center;
+}
+.stkFtrTxt
+{
+    color: white;
+    margin-top: 100px !important;
+    text-align: center;
+}
+
+.stkftr{
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+}
+
+.input-section
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    background-color: #f2f1ff;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 1px #00000026;
+    margin-top: 30px;
+    margin-left: 150px;
+    padding: 30px;
+}
+/* .input-section input
+{
+margin: 20px;
+} */
+.budGroup
+{
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'inter';
+    font-size: 17px;
+    font-weight: 700;
+    gap: 8px;
+}
+.budGroup input
+{
+position: relative;
+display: flex;
+border-style: solid;
+border-color: #450099;
+border-radius: 30px;
+padding: 5px;
+}
+#calculateButton
+{
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-top: -30px;
+    z-index: 1;
+    box-shadow: 0 0 8px 1px #0000007d;
+    margin-left: 850px;
+}
+
+.budBottom
+{
+    position: inherit;
+    display: flex;
+    width: 80%;
+    background-color: hsla(0, 0%, 100%, 0.462);
+    margin: 40px 0 30px 0;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 150px;
+}
+
+#chartContainer
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#results
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'inter';
+    font-size: 20px;
+    margin: 10px 0 50px 0;
+}
+
+.headerPhone
+{
+    display: none;
+}
+
+@media screen and (max-width: 450px)
+{
+    .header
+    {
+        display: none;
+    }
+    .headerPhone
+    {
+        position: relative;
+        display: flex;
+        width: 95%;
+        align-items: center;
+        width: 99vw;
+        height: 75px;
+        color: black;
+        /* padding-left: 17px; */
+        justify-content: space-between;
+    }
+}

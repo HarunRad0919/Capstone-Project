@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+/* SignInPage.css */
+body {
+    background-image: url('./background-image.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire body with the background image */
+    background-position: center; /* Center the background image */
+    margin: 0;
+    padding: 0;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+.logo {
+    height: 40px; /* Set the height of the logo as needed */
+    margin-right: 20px; /* Adjust margin for spacing */
+}
+
+
+.content-container {
+    margin: 25px auto; /* Center the container horizontally and adjust top margin */
+    padding: 20px;
+    background-color: #f2f2f2; /* Slightly darker grey box color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    width: 80%; /* Set the width as a percentage of the viewport width */
+    max-width: 600px; /* Set a maximum width for the container */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 0; /* Remove default margin from the top */
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px;
+    background-color: #d910bb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Reem Kufi", sans-serif;
+}
+
+button:hover {
+    background-color: #8610e6;
+}
+
+.google-login-container {
+    display: flex;
+    justify-content: center; /* Center the Google icon horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.register-link {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.resetpassword-link{
+    text-align: center; /* Center the text horizontally */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+.error-message {
+    padding: 0.9rem 1.75rem;
+    background-color: rgb(217, 16, 187);
+    border: none;
+    border-radius: 5rem; 
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
